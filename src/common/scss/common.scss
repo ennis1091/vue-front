@@ -1,0 +1,52 @@
+$bgColor: #f3f3f3;
+
+@mixin ellipsis($clamp: 1){
+    overflow: hidden;
+    text-overflow: ellipsis;
+    @if($clamp == 1){
+        white-space: nowrap;
+    }@else{
+        text-overflow: ellipsis;
+        display: -webkit-box;
+        -webkit-line-clamp: $clamp;
+        -webkit-box-orient: vertical;
+    }
+}
+
+/* clearfix */
+@mixin clearfix {
+    &:after {
+        clear: both;
+        content: '.';
+        display: block;
+        height: 0;
+        line-height: 0;
+        overflow: hidden;
+    }
+    *height: 1%;
+}
+
+@mixin bg-fixed($top,$bottom,$bg,$index) {
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: $top;
+  bottom: $bottom;
+  background: $bg;
+  z-index: $index;
+}
+
+@mixin placeholder($color:#c2c2c2) {
+    &::-webkit-input-placeholder {
+    color: $color;
+    }
+    &::-moz-placeholder {
+    color: $color;
+    }
+    &:-moz-placeholder {
+    color: $color;
+    }
+    &:-ms-input-placeholder {
+    color: $color;
+    }
+}
