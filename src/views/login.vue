@@ -5,7 +5,7 @@
     <div class="center">
       <h3>
         <span @click="change(1)" :class="{active:submit=='商户登录'}">
-          商户登录aa
+          商户登录aaa
           <i class="bod-1"></i>
         </span>
         <span @click="change(2)" :class="{active:submit=='代理商登录'}">
