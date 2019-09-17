@@ -1,6 +1,6 @@
 FROM nginx
 LABEL name="vue-front"
-LABEL version="1.1"
+LABEL version="1.0"
 COPY ./dist /usr/share/nginx/html
-COPY ./vue-front.conf  /ect/nginx/conf.d
+COPY ./vue-front.conf  /etc/nginx/conf.d
 EXPOSE 80
