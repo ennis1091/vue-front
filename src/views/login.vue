@@ -23,10 +23,7 @@
           </div>
           <div class="form-yzm">
             <input type="text" placeholder="验证码" v-model="params.yzm" />
-            <el-image
-              class="yzm-img"
-              src="https://qa-merchant.poseidong.com/web-merchant/common/captcha?r=1568013764530"
-            ></el-image>
+            <el-image class="yzm-img" src></el-image>
             <span>
               看不清
               <br />换一张
@@ -59,8 +56,8 @@ export default {
       params: {
         username: '18667138598',
         password: '1234',
-        userType: 'merchant',
-        yzm: ''
+        userType: 'merchant'
+        // yzm: ''
       }
     }
   },
